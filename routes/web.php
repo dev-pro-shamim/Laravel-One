@@ -18,3 +18,10 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::get("/demo", [DemoCoontroller::class, 'demo1']);
+
+
+Route::post("/demo2", [DemoCoontroller::class, 'demo2']);
+
+Route::put("/demo3", [DemoCoontController::class, 'demo3']);
